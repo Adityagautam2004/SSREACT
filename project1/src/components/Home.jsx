@@ -24,8 +24,11 @@ function Home() {
       }
     }
     useEffect(() => {
-      if(!filteredProducts || category == 'undefined') setFilteredProducts(products)
-      if(category != "undefined" )getproductscategory()
+      if(!filteredProducts || category == 'undefined ') setFilteredProducts(products)
+      if(category != "undefined" ){
+        getproductscategory()
+        setFilteredProducts(products.filter((product) => product.category == category))
+      }
     }, [category ,products])
 
   return products ? (
