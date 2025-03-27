@@ -10,7 +10,7 @@ function Work() {
         {url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef0af108a465002975acd_Showcase%20Websites%20(1).png" ,top: "65%" ,left: "55%" , isActive: false},
     ]
   return (
-    <div className='w-full '>
+    <div className='w-full mt-10 '>
         <div className='relative max-w-screen-xl mx-auto text-center'>
             <h1 className='text-[30vw] leading-none font-medium select-none text-white tracking-tight'>work</h1>
             <div className='top-0 w-full h-full absolute '>
