@@ -42,8 +42,8 @@ function Marqees() {
         "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/65b2d27505e3a120466b87aa_singularity.svg"]
     ]
   return (
-    <div className='py-20 mt-32'>
-        {images.map(item => <Marqee imagesurls={item} />)}
+    <div className='py-20 mt-32 w-full relative overflow-hidden'>
+        {images.map((item, index) => <Marqee key={index} direction={index ===0? 'left' : 'right'} imagesurls={item} />)}
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { motion } from 'framer-motion';
 
-function Card({width , start , para , hover}) {
+function Card({width , start , para , hover='false'}) {
   return (
-    <div className={`text-white bg-zinc-800 p-5 rounded-xl min-h-[25rem] flex flex-col justify-between hover:${hover} ${width}` }>
+    <motion.div whileHover={{backgroundColor: hover === 'true' && "#7443ff" , padding: '25px'}} className={`text-white bg-zinc-800 p-5 rounded-xl min-h-[25rem] flex flex-col justify-between  ${width}` }>
         <div className='w-full'>
         <div className='w-full flex justify-between items-center'>
             <h3>one heading</h3>
@@ -31,7 +32,7 @@ function Card({width , start , para , hover}) {
 
 
         </div>
-    </div>
+    </motion.div>
   )
 }
 
